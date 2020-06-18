@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lan="en">
+
+	<head>
+		<title>JavaScript 2</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="CSS/CSS_1.css">
+    </head>
+
+    <body>
+
+        <ol>
+            <li data-family_relation="father">Mark</li>
+            <li data-family_relation="mother">Kelly</li>
+            <li data-family_relation="sister">Maxine</li>
+        </ol>
+
+        <hi>Characters</hi><br>
+        <h3>Click on a universe to see a character!</h3>
+
+        <ul>
+            <li onclick="displayType(this)" id="DC" data-character-type="Batman">DC</li>
+            <li onclick="displayType(this)" id="Star Wars" data-character-type="Luke Skywalker">Star Wars</li>
+            <li onclick="displayType(this)" id="Marvel" data-character-type="Thor">Marvel</li>
+            <li onclick="displayType(this)" id="Star Trek" data-character-type="Jean-Luc Picard">Star Trek</li>
+        </ul>
+
+        <h2>Please fill in your contact information</h2>
+
+        <form name="contact_form" onsubmit="return validateForm()" method="post" >
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value=""><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value=""><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" value=""><br><br>
+            <input type="submit" value="Submit">
+        </form>
+
+        <script src="JavaScript/JavaScript_2.js"></script>
+
+    </body>
+</html>
